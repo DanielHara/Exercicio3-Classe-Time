@@ -1,0 +1,31 @@
+class Time
+{
+  private int hour;
+  private int minute;
+  
+  time (int hora, int minuto)   //Este é um construtor
+  {
+    hour = hora;
+    minute = minuto;
+  }
+  
+  setTime (int hora, int minuto)    //Este método seta o tempo. O primeiro argumento é a hora a ser ajustada, e o segundo é o minuto.
+  {
+    hour = hora;
+    minute = minuto;
+  }
+    
+  showTime ()           //Este método escreve o tempo na tela.
+  {
+    System.out.println("O tempo agora é" + hour + ":" + minute);
+  }
+  
+  public static void main (String arg[])
+  {
+    time t = new time (3,25);    //Assim o tempo já começa ajustado para 3:25
+    setTime (2,30);             //Agora ajustamos para 2:30
+    showTime (); 
+  }
+
+
+}
